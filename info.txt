@@ -1,0 +1,23 @@
+
+--- IDs ---
+#Burguer = Container da seção de hambúrgueres.
+#Pizza   = Container da seção de pizzas.
+#Fritas  = Container da seção de acompanhamentos.
+#Bebidas = Container da seção de bebidas.
+#fzrPedido = Bloco de encerramento antes do footer.
+
+--- CLASSES DE LAYOUT ---
+.Catalogo = Div pai que agrupa os itens.
+.catCard  = O "cartão" individual do produto.
+.catImagem = Classe para controlar o tamanho das fotos.
+
+obs: Os caminhos das imagens já estão prefixados com "images/".
+--- CLASSES ---
+.catTitulo  =  Título do prato (H3).
+.Descricao  =  Texto com os ingredientes.
+.preco      =  Parágrafo que contém o valor.
+.Botao      =  O link para proxima pagina (Eu sugeria faze-lo parecer um botão).     
+.rodape     =  O rodape onde fica as informações extras(qualquer uma serve)
+=====================================================================================
+Isso pode mudar com o tempo até o prazo. só fiz esse guia pra ajudar a pessoa do CSS.
+=====================================================================================
