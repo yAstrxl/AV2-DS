@@ -1,3 +1,4 @@
+|Home.html|
 
 --- IDs ---
 #Burguer = Container da seção de hambúrgueres.
@@ -18,6 +19,30 @@ obs: Os caminhos das imagens já estão prefixados com "images/".
 .preco      =  Parágrafo que contém o valor.
 .Botao      =  O link para proxima pagina (Eu sugeria faze-lo parecer um botão).     
 .rodape     =  O rodape onde fica as informações extras(qualquer uma serve)
+
+|pedidoForm.html|
+
+--- IDs ---
+#infoCliente = Container da seção de informações pessoais do cliente.
+#endereco    = Container da seção de endereço de entrega.
+#pedido      = Container da seção principal onde os lanches são escolhidos.
+
+--- CLASSES DE LAYOUT ---
+.clienteCampo  = Div que agrupa o label e o input dos dados do cliente.
+.enderecoCampo = Div que agrupa o label e o input dos dados de endereço.
+.item-box      = O "cartão" individual que agrupa a foto, nome, checkbox e quantidade de cada produto.
+
+obs: Os caminhos das imagens já estão prefixados com "images/".
+
+--- CLASSES ---
+.logo        = Título principal do restaurante (H1).
+.titulo      = Subtítulo da página "Configurando Pedido" (H2).
+.food-img    = Classe para controlar o tamanho das fotos dos lanches.
+.item-titulo = Nome do prato/bebida ao lado da imagem (Label).
+.checkbox    = A caixinha de marcar o lanche escolhido.
+.Pag-Select  = O campo dropdown de seleção da forma de pagamento.
+.rodape      = O rodapé onde ficam as informações extras (endereço, funcionamento, etc).
+
 =====================================================================================
-Isso pode mudar com o tempo até o prazo. só fiz esse guia pra ajudar a pessoa do CSS.
+Isso pode mudar com o tempo até o prazo.
 =====================================================================================

@@ -1,42 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Nome do Restaurante &#9679; pedido</title>
-    </head>
-    <body>
-        <header id="Header">
-            <h1 class="logo">Nome do Restaurante</h1>
-            <h2 class="titulo">Configurando Pedido</h2>
-        </header>
 
-        <main>
-            <form action="#" method="post">
-              <section id="dadosCliente">
-                <fieldset>
-                  <legend>Dados do Cliente</legend>
-                
-                  <div class="clienteCampo">
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="Cliente-nome" placeholder="Insira seu nome completo" required>
-                  </div>
-                
-                  <div class="clienteCampo">
-                    <label for="cpf">CPF:</label>
-                    <input type="tel" id="cpf" name="Cliente-cpf" maxlength="14" placeholder="000.000.000-00" required>
-                  </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome do Restaurante &#9679; pedido</title>
+</head>
 
-                  <div class="clienteCampo">
-                    <label for="tel">Telefone:</label>
-                    <input type="tel" id="tel" name="Cliente-tel" maxlength="15" placeholder="(00) 00000-0000" required>
-                  </div>
-                </fieldset> 
-             </section>
-             <section id="Endereco">
+<body>
+    <header id="Header">
+        <h1 class="logo">Nome do Restaurante</h1>
+        <h2 class="titulo">Configurando Pedido</h2>
+    </header>
+
+    <main>
+        <form action="#" method="post">
+            <section id="infoCliente">
                 <fieldset>
-                    <legend>Endereço</legend>
-                    
+                    <legend>Informações Pessoais</legend>
+
+                    <div class="clienteCampo">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="Cliente-nome" placeholder="Insira seu nome completo"
+                            required>
+                    </div>
+
+                    <div class="clienteCampo">
+                        <label for="cpf">CPF:</label>
+                        <input type="tel" id="cpf" name="Cliente-cpf" maxlength="14" placeholder="000.000.000-00"
+                            required>
+                    </div>
+
+                    <div class="clienteCampo">
+                        <label for="tel">Telefone:</label>
+                        <input type="tel" id="tel" name="Cliente-tel" maxlength="15" placeholder="(00) 00000-0000"
+                            required>
+                    </div>
+                </fieldset>
+            </section>
+            <section id="endereco">
+                <fieldset>
+                    <legend>Endereço de Entrega</legend>
+
+                    <div class="enderecoCampo">
+                        <label for="cep">CEP:</label>
+                        <input type="tel" id="cep" name="Cliente-cep" placeholder="00000-000" required>
+                    </div>
+
                     <div class="enderecoCampo">
                         <label for="cidade">Cidade:</label>
                         <input type="text" id="cidade" name="Cliente-city" required>
@@ -44,7 +54,7 @@
 
                     <div class="enderecoCampo">
                         <label for="rua">Rua:</label>
-                        <input type="text" id="rua" name="Cliente-rua" required> 
+                        <input type="text" id="rua" name="Cliente-rua" required>
                     </div>
 
                     <div class="enderecoCampo">
@@ -59,66 +69,142 @@
 
                     <div class="enderecoCampo">
                         <label for="numero">Número:</label>
-                        <input type="text" id="numero" name="Cliente-num" required> 
+                        <input type="tel" id="numero" name="Cliente-num" required>
                     </div>
                 </fieldset>
-             </section> 
-             <section>
+            </section>
+            <section id="pedido">
                 <fieldset>
-                    <legend>Pedido</legend>
+                    <legend>Seu Pedido</legend>
 
-                    <select class="Ped-Select">
-                        <option value="">Selecione uma opção</option>
-                        <option value="X-Bacon">X-Bacon</option>
-                        <option value="X-Salada">X-Salada</option>
-                        <option value="X-Frango">X-Frango</option> 
-                    </select>
-                    <input type="tel" class="qtd" maxlength="2">
+                    <h3>Hambúrgueres</h3>
 
-                     <select class="Ped-Select">
-                        <option value="">Selecione uma opção</option>
-                        <option value="pizzaCalbr"> Pizza Calabresa</option>
-                        <option value="pizzaFragCat">Pizza Frango com Catupiry</option>
-                        <option value="pizzaPortug">Pizza Portuguesa</option>
-                        <option value="pizzaVeget">Pizza Vegetariana</option>
-                    </select>
-                    <input type="tel" class="qtd" maxlength="2">
+                    <div class="item-box">
+                        <img src="images/" class="food-img" alt="X-Bacon">
+                        <label class="item-titulo">X-Bacon</label>
+                        <input type="checkbox" name="item" class="checkbox" value="x-bacon">
+                        <input type="number" name="qtd-x-bacon" min="1" max="10" placeholder="Quantidade:">
+                    </div>
 
-                    <select class="Ped-Select">
-                        <option value="">Selecione uma opção</option>
-                        <option value="Bat-Tradicional">Batata Frita Tradicional</option>
-                        <option value="Bat-Cheddar">Batata com Cheddar e Bacon</option>
-                    </select>
-                    <input type="tel" class="qtd" maxlength="2">
+                    <div class="item-box">
+                        <img src="images/" class="food-img" alt="X-Salada">
+                        <label class="item-titulo">X-Salada</label>
+                        <input type="checkbox" name="item" class="checkbox" value="x-salada">
+                        <input type="number" name="qtd-x-salada" min="1" max="10" placeholder="Quantidade:">
+                    </div>
 
-                    <select class="Ped-Select">
-                        <option value="">Selecione uma opção</option>
-                        <option value="Guaraná Antarctica">Guaraná Antarctica</option>
-                        <option value="cocaCola">Coca Cola</option>
-                        <option value="sucoLaranja">Suco de laranja</option>
-                        <option value="cha">Chá Gelado Mate Leão</option>
-                    </select>
-                    <input type="tel" class="qtd" maxlength="2"> 
+                    <div class="item-box">
+                        <img src="images/" class="food-img" alt="X-Frango">
+                        <label class="item-titulo">X-Frango</label>
+                        <input type="checkbox" name="item" class="checkbox" value="x-frango">
+                        <input type="number" name="qtd-x-frango" min="1" max="10" placeholder="Quantidade:">
+                    </div>
+
+                    <div class="item-box">
+                        <img src="images/" class="food-img" alt="Vegetariano">
+                        <label class="item-titulo">Hambúrguer Vegetariano</label>
+                        <input type="checkbox" name="item" class="checkbox" value="vegetariano">
+                        <input type="number" name="qtd-vegetariano" min="1" max="10" placeholder="Quantidade:">
+                    </div>
+
+                    <h3>Pizzas</h3>
+
+                    <div class="item-box">
+                        <img src="images/" class="food-img" alt="Pizza C">
+                        <label class="item-titulo">Pizza Calabresa</label>
+                        <input type="checkbox" name="item" class="checkbox" value="pizza-c">
+                        <input type="number" name="qtd-pizza-c" min="1" max="10" placeholder="Quantidade:">
+                    </div>
+
+                    <div class="item-box">
+                        <img src="images/" class="food-img" alt="Pizza FC">
+                        <label class="item-titulo">Pizza Frango Com Catupiry</label>
+                        <input type="checkbox" name="item" class="checkbox" value="pizza-fc">
+                        <input type="number" name="qtd-pizza-fc" min="1" max="10" placeholder="Quantidade:">
+                    </div>
+
+                    <div class="item-box">
+                        <img src="images/" class="food-img" alt="Pizza P">
+                        <label class="item-titulo">Pizza Portuguesa</label>
+                        <input type="checkbox" name="item" class="checkbox" value="pizza-p">
+                        <input type="number" name="qtd-pizza-p" min="1" max="10" placeholder="Quantidade:">
+                    </div>
+
+                    <div class="item-box">
+                        <img src="images/" class="food-img" alt="Pizza V">
+                        <label class="item-titulo">Pizza Vegetariana</label>
+                        <input type="checkbox" name="item" class="checkbox" value="pizza-v">
+                        <input type="number" name="qtd-pizza-v" min="1" max="10" placeholder="Quantidade:">
+                    </div>
+
+                    <h3>Batatas Fritas</h3>
+
+                    <div class="item-box">
+                        <img src="images/" class="food-img" alt=" Btt Tradicional">
+                        <label class="item-titulo">Batata Frita Tradicional</label>
+                        <input type="checkbox" name="item" class="checkbox" value="btt-t">
+                        <input type="number" name="qtd-btt-t" min="1" max="10" placeholder="Quantidade:">
+                    </div>
+
+                    <div class="item-box">
+                        <img src="images/" class="food-img" alt="Btt C&B">
+                        <label class="item-titulo">Batata Frita Com Cheddar e Bacon</label>
+                        <input type="checkbox" name="item" class="checkbox" value="btt-cb">
+                        <input type="number" name="qtd-btt-cb" min="1" max="10" placeholder="Quantidade:">
+                    </div>
+
+                    <h3>Bebidas (350ml)</h3>
+
+                    <div class="item-box">
+                        <img src="images/" class="food-img" alt="guaraná">
+                        <label class="item-titulo">Guaraná Antarctica</label>
+                        <input type="checkbox" name="item" class="checkbox" value="guarana">
+                        <input type="number" name="qtd-guarana" min="1" max="10" placeholder="Quantidade:">
+                    </div>
+
+                    <div class="item-box">
+                        <img src="images/" class="food-img" alt="coca">
+                        <label class="item-titulo">Coca Cola</label>
+                        <input type="checkbox" name="item" class="checkbox" value="coca">
+                        <input type="number" name="qtd-coca" min="1" max="10" placeholder="Quantidade:">
+                    </div>
+
+                    <div class="item-box">
+                        <img src="images/" class="food-img" alt="suco">
+                        <label class="item-titulo">Suco de Laranja</label>
+                        <input type="checkbox" name="item" class="checkbox" value="s-laranja">
+                        <input type="number" name="qtd-s-laranja" min="1" max="10" placeholder="Quantidade:">
+                    </div>
+
+                    <div class="item-box">
+                        <img src="images/" class="food-img" alt="cha">
+                        <label class="item-titulo">Chá Gelado Mate Leão</label>
+                        <input type="checkbox" name="item" class="checkbox" value="cha-g">
+                        <input type="number" name="qtd-cha-g" min="1" max="10" placeholder="Quantidade:">
+                    </div>
                 </fieldset>
+            </section>
+            <section id="Pagamento">
                 <fieldset>
                     <legend>Pagamento</legend>
 
-                    <select class="Pag-Select">
+                    <select class="Pag-Select" name="pagamento">
                         <option value="">Selecione um tipo de pagamento</option>
-                        <option value="dinheiro">Dinheiro</option>
+                        <option value="dinheiro">DINHEIRO</option>
                         <option value="pix">PIX</option>
                     </select>
                 </fieldset>
-             </section>
+            </section>
+            <button type="submit">Finalizar Pedido</button>
+        </form>
+    </main>
+    <footer>
+        <div class="rodape">
+            <p>&copy; 2026 Nome do Restaurante - Todos os direitos reservados.</p>
+            <p>Endereço: Rua dos Sabores, 123 - São Paulo/SP</p>
+            <p>Horário de Funcionamento: Terça a Domingo, 18h às 23h</p>
+        </div>
+    </footer>
+</body>
 
-            </form>
-        </main>
-        <footer>
-            <div class="rodape">
-                <p>&copy; 2026 Nome do Restaurante - Todos os direitos reservados.</p>
-                <p>Endereço: Rua dos Sabores, 123 - São Paulo/SP</p>
-                <p>Horário de Funcionamento: Terça a Domingo, 18h às 23h</p>
-            </div>
-        </footer>
-    </body>
 </html>
