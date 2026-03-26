@@ -8,6 +8,7 @@
 #fzrPedido = Bloco de encerramento antes do footer.
 
 --- CLASSES DE LAYOUT ---
+.container = Div pai que agrupa todos os elementos da estrutura.
 .Catalogo = Div pai que agrupa os itens.
 .catCard  = O "cartão" individual do produto.
 .catImagem = Classe para controlar o tamanho das fotos.
@@ -28,6 +29,7 @@ obs: Os caminhos das imagens já estão prefixados com "images/".
 #pedido      = Container da seção principal onde os lanches são escolhidos.
 
 --- CLASSES DE LAYOUT ---
+.container = Div pai que agrupa todos os elementos da estrutura.
 .clienteCampo  = Div que agrupa o label e o input dos dados do cliente.
 .enderecoCampo = Div que agrupa o label e o input dos dados de endereço.
 .item-box      = O "cartão" individual que agrupa a foto, nome, checkbox e quantidade de cada produto.
